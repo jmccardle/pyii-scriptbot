@@ -1,5 +1,5 @@
 # pyii-scriptbot
-Python 3 IRC bot which 
+Python 3 IRC bot
 
 ## What it is
 pyii-scriptbot is an *allegedly* simple bot which uses the IRC program **ii** to connect to IRC. It watches the FIFO pipes ii creates for changes through inotify, and runs scripts when IRC users ask it to.
@@ -8,20 +8,22 @@ License: MIT
 This project benefited from MIT licensed code in the pyinotify tutorial here: https://github.com/seb-m/pyinotify
 
 ## Dependencies
-Python3.
+* Python3.
 Python 3 packages:
-pyinotify
-pexpect
+* pyinotify
+* pexpect
 
 External programs:
-ii
+* ii
 
 If you're on Debian/Ubuntu, run:
+```
 sudo apt-get install python3 python3-pip ii
 sudo pip3 install pyinotify pexpect
+```
 
 ## How to Use it
-python3 scriptbot.py --nick botnick --srv irc-server.net --chan #channel --port 6667
+`python3 scriptbot.py --nick botnick --srv irc-server.net --chan #channel --port 6667`
 the nick and server are mandatory; the channel defaults to #robotlounge, the port defaults to 6667.
 
 ## How to Interact with it
